@@ -1,0 +1,27 @@
+/* Selector de hijos */
+div > p {
+    color: goldenrod;
+}
+
+/* ----- Selector de Atributos ----- */
+/* Selecciona todos los input que tengan un atributo type */
+input[type] {
+    color: blue;
+}
+
+/*Selecciona todos los input que tengan el atributo type y el valor text*/
+input[type="text"] {
+    font-size: xx-large;
+}
+
+/* ----- HERENCIA ----- */
+/* Todos los elementos de la pagina heredaran los estilos del padre mas cercano, hasta que se le especifique lo contrario */
+body {
+    font-size: larger;
+    color: blue;
+}
+
+article {
+    font-size: large;
+    color: black;
+}

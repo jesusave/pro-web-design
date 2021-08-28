@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tablas</title>
+	</head>
+	<body>
+		<!--
+        	El Elemento de Tabla HTML (<table>) representa datos en dos o mas dimensiones.
+        	Usamos thead, tbody y tfoot para order nuestras tablas y aplicar determinadas acciones a cada elemento si se requiere
+	    -->
+	    <table bgcolor="gray" border="1" cellpadding="10" cellspacing="10" width="400" align="center">
+	        <tr> <!-- table row - define una fila -->
+	          <th>Encabezado 01</th> <!-- th define table head - celda de encabezado -->
+	          <th>Encabezado 02</th>
+	        </tr>
+	        <tr>
+	          <td>Contenido 01</td> <!-- td define table date - celda de dato -->
+	          <td>Contenido 02</td>
+	        </tr>
+	    </table>
+
+	    <br><br>
+
+	    <table align="center">
+	        <thead> <!--Etiqueta para agrupar el contenido del encabezado en una tabla (opcional) -->
+	            <tr>
+	                <th>Mes</th>
+	                <th>Ahorro</th>
+	            </tr>
+	        </thead>
+	       	
+	       	<tbody> <!--Etiqueta para agrupar el contenido del cuerpo en una tabla (opcional)-->
+	            <tr>
+	                <td>Enero</td>
+	                <td>$100</td>
+	            </tr>
+	            <tr>
+	                <td>Febrero</td>
+	                <td>$200</td>
+	            </tr>
+	        </tbody>
+
+	        <tfoot> <!--Etiqueta para agrupar el contenido del pie en una tabla (opcional) -->
+	            <tr>
+	                <td>Suma Total:</td>
+	                <td>$300</td>
+	            </tr>
+	        </tfoot>
+	    </table>
+	</body>
+</html>

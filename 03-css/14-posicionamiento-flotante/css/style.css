@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+.main-box {
+    background: rebeccapurple;
+    width: 700px;
+    overflow: hidden;
+}
+
+.box {
+    background-color: tomato;
+    color: white;
+    width: 200px;
+    height: 200px;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.one {
+    float: left;
+}
+
+.two {
+    float: right;
+}
+
+/*.clear {
+    clear: both;
+}*/
+
+.article {
+    background-color: #948e87;
+    width: 660px;
+    padding: 20px;
+}
+
+.article img {
+    float: right;
+    margin: 20px;
+    border-radius: 4px;
+}

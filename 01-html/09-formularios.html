@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario</title>
+	</head>
+	<body>		
+		<form action="">
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="10" size="60" required="">
+			<br><br>
+
+			<label for="apellido">Apellido</label>
+			<input type="text" id="apellido" name="apellido" value="Avelar" minlength="2" readonly="">
+
+			<br><br>
+
+			<label for="correo">Correo</label>
+			<input type="email" id="correo" name="correo" required="">
+
+			<br><br>
+			<label for="contrasenia">Contraseña</label>
+			<input type="password" name="contrasenia" id="contrasenia">
+
+			<br><br>
+			<label for="edad">Edad</label>
+			<input type="number" id="edad" name="edad">
+
+			<br><br>
+			<label for="telefono">Numero de telefono</label>
+			<input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="formato: 123-456-789">
+
+			<br><br>
+			<label for="genero">Comida favorira</label>
+			<select name="genero" id="genero">
+				<option value="" selected="" disabled="">Seleccione una de las siguientes</option>
+				<option value="m">Tacos</option>
+				<option value="f">Pizza</option>
+				<option value="o">Pollo</option>
+			</select>
+
+			<br><br>
+
+			<label for="pais">Paìses a lo que quiero viajar</label>
+		  	<select multiple="" id="pais" name="pais">
+		  		<option>Japòn</option>
+		        <option>USA</option>
+		        <option>Mexico</option>
+		        <option>Belice</option>
+		        <option>Italia</option>
+		   	</select>
+
+			<br><br>
+
+			<fieldset> <!-- permite organizar en grupos los campos de un formulario -->
+				<legend>Lugar favorito</legend>
+				<input type="radio" id="playa" name="lugar" value="playa" checked>
+				<label for="playa">Playa</label>
+		
+				<input type="radio" id="montania" name="lugar" value="montania">
+				<label for="montania">Montaña</label>
+
+				<input type="radio" id="bosque" name="lugar" value="bosque">
+				<label for="bosque">Bosque</label>
+			</fieldset>
+
+			<br><br>
+			<fieldset> <!-- permite organizar en grupos los campos de un formulario -->
+				<legend>Dìas favoritos de la semana</legend>
+				<input type="checkbox" id="sabado" name="sabado" checked>
+				<label for="sabado">Sàbado</label>
+		
+				<input type="checkbox" id="domingo" name="domingo">
+				<label for="domingo">Domingo</label>
+
+				<input type="checkbox" id="lunes" name="lunes">
+				<label for="lunes">Lunes</label>
+			</fieldset>
+
+			<br><br>
+			<label for="foto">Subir una foto</label>
+			<input type="file" name="foto" id="foto">
+
+			<br><br>
+			<label for="url">URL de perfil</label>
+			<input type="url" name="url">
+
+			<br><br>	
+			<label for="hora">Hora de almuerzo</label>
+			<input type="time" name="hora" id="hora">
+
+			<br><br>
+			<label for="busqueda">Buscar mi canciòn favorita </label>
+			<input type="search" name="busqueda">
+
+			<br><br>
+			<label for="citaMedica">Mi cita medica</label>
+			<input type="date" name="citaMedica" min="2013-06-01" max="2013-08-31" step="7" id="citaMedica">
+
+			<br><br>
+			<label for="colorRopa">Color de mi ropa favorito</label>
+			<input type="color" name="colorRopa" id="colorRopa">
+			
+			<br><br>
+
+			<label for="rango">Rango</label>
+			<input type="range" name="rango" id="rango">
+
+			<br><br>
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+
+h1, p, div {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+a, span {
+    background-color: black;
+    color: white;
+}
+
+a {
+    display: inline-block; /* Establece el tipo de caja generada por un elemento */
+    /*
+        Valores permitidos
+            Uno y sólo uno de los siguientes valores:
+                inline - en linea
+                block - en bloque
+                inline-block - se respetan los margins / paddings superior e inferior
+                list-item
+                run-in
+                table
+                inline-table
+                table-row-group
+                table-header-group
+                table-footer-group
+                table-row
+                table-column-group
+                table-column
+                table-cell
+                table-caption
+                none - invisible
+                inherit
+
+        Valor inicial = inline
+    */
+}

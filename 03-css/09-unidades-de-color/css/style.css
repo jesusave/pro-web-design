@@ -1,0 +1,18 @@
+/*
+    Podemos usar palabras clave como:
+        aliceblue, antiquewhite, aqua, aquamarine, azure, beige, bisque...
+
+    RGB decimal (Red, Green y Blue) van desde 0 a 255. Ejemplo: rgb(255, 128, 128)
+
+    RGB porcentual (Red, Green y Blue). Ejemplo: rgb(84%, 15%, 24%)
+
+    RGBA que representa a Red, Green, Blue y Alpha (transparencia del 0 al 1). Ejemplo: rgba(255,0,0,0.3)
+
+    RGB exadeciamal se representan con 6 caracteres y deben empezar con #. Ejemplo: #008F7A
+*/
+
+.container {
+    height: 600px;
+    width: 600px;
+    background-color: rgba(255, 0, 0, 0.1);
+}

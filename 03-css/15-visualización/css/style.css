@@ -1,0 +1,80 @@
+body {
+    background-color: lightblue;
+    font-family: "Comic Sans MS", "Times New Roman", Arial, SansSerif, Helvetica;
+}
+
+div, a {
+    background-color: black;
+    color: white;
+}
+
+/* display [inline | block | none | inline-block | flex ] */
+
+/*
+    "display: none" reserva el espacio
+    visibility: hidden; no reserva el espacio
+*/
+
+a {
+    display: inline-block;
+    background-color: #1475cb;
+    color: white;
+    padding: 20px;
+}
+
+ .box {
+     color: white;
+     background-color: #4fb560;
+     margin: 20px 0;
+     width: 200px;
+     height: 300px;
+     overflow: auto;  /*Controla el comportamiento de los contenidos que no caben en su contenedor*/
+     /*
+        Valores permitidos
+            Uno y sólo uno de los siguientes valores:
+                visible
+                hidden
+                scroll
+                auto
+                inherit
+
+        Valor inicial = visible
+
+        Tambien podemos usar
+            overflow-x - Para el contenido que no cabe en el eje de las X
+            overflow-y - Para el contenido que no cabe en el eje de las Y
+    */
+ }
+
+ .container_01 {
+     width: 600px;
+     background-color: tomato;
+     margin: 20px 0;
+     overflow: hidden;
+ }
+
+ .left {
+     float: left;
+ }
+
+ .right {
+     float: right;
+ }
+
+ .container_02 .box {
+     width: 150px;
+     height: 150px;
+     position: relative;
+ }
+
+ .tomato {
+     background-color: tomato;
+     z-index: 2;
+ }
+
+ .info {
+     background-color: rebeccapurple;
+     left: 56px;
+     bottom: 80px;
+     z-index: 10;
+ }

@@ -1,0 +1,53 @@
+div {
+    margin: 20px 0;
+}
+
+.btn {
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Colores */
+.btn-primary {
+    background-color: #e95420;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #948e87;
+    color: #ffffff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: #ffffff;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+/* Tamaños */
+.btn-small {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.btn-default {
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.btn-big {
+    font-size: 20px;
+    padding: 8px 16px;
+}
+

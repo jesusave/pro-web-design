@@ -1,0 +1,246 @@
+/*Importamos nuestra fuente de manera local*/
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../font/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+/*Importamos nuestra fuente de un servidor externo*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: "Comic Sans MS", "Times New Roman", Arial, SansSerif, Helvetica;
+}
+
+h1 {
+    font-family: "Times New Roman", Arial; /*Establece la fuente o tipo de letra*/
+    font-style: italic; /*Establece el estilo del tipo de letra*/
+    font-size: 20px;
+    font-weight: normal;
+    color: tomato;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Ubuntu";
+}
+
+p {
+	color: gray; /*Establece el color del texto de un elemento*/
+
+	font-family: 'Roboto', Arial, SansSerif; /*Establece la fuente o tipo de letra*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				- Nombre de la fuente o tipo de letra
+				- Nombre genérico de la fuente o tipo de letra
+			Seguido opcionalmente por uno o más de los siguientes valores:
+				- Nombre de la fuente o tipo de letra
+				- Nombre genérico de la fuente o tipo de letra
+			inherit
+		
+		Valor genérico | Fuentes con aspecto similar
+			serif = Times New Roman, Times, Garamond, Georgia, Cambria
+			sans-serif = Arial, Helvetica, Verdana, Trebuchet, Tahoma, Futura
+			cursive = Comic Sans
+			fantasy = Comic Sans, Impact
+			monospace = Courier New, Monaco, Consolas
+
+		Valor inicial = Depende del navegador
+		
+		Podemos acceder a muchas fuentes en:
+			https://fonts.google.com/
+			https://fonts.google.com/specimen/Nerko+One?sidebar.open=true
+			https://fonts.google.com/specimen/Sansita+Swashed
+
+		Las fuentes se pueden incluir de dos formas:
+			En el HTML:
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+				<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+			En el CSS:
+				@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+	*/
+
+	font-style: oblique; /*Establece el estilo del tipo de letra*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				normal
+				italic
+				oblique
+				inherit
+
+		Valor inicial = normal
+	*/
+
+	font-size: 1.3em; /*Establece el tamaño de letra*/
+	/*
+		Los navegadores de manera predeterminada definen un font-size de 16px
+
+		Entonces 16px es igual a 1em
+
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				absolute-size
+				relative-size
+				medida
+				porcentaje
+				inherit
+		Si se utilizan porcentajes, hace referencia al tamaño de letra del elemento contenedor
+
+		Valor inicial = medium
+		
+		Ejemplos de uso
+			font-size: xx-large
+			font-size: x-large
+			font-size: large
+			font-size: medium
+			font-size: small
+			font-size: x-small
+			font-size: xx-small
+	*/
+
+	font-weight: 900; /*Establece el grosor de cada letra*/
+	/*
+		Valores permitidos
+			Uno y sólo uno de los siguientes valores:
+				normal | bold | bolder | lighter 
+				100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+				inherit
+
+		Valor inicial = normal
+	*/
+
+	text-align: left; /*Establece la alineación del contenido*/
+	/*
+		Valores permitidos.	Uno y sólo uno de los siguientes valores:
+			
+			left - izquierda
+			right - derecha
+			center - centrado
+			justify - justificado
+			inherit - padre
+	*/
+
+    letter-spacing: 1px; /* Establece el espacio entre los caracteres */
+
+	text-indent: 30px; /*Establece la tabulación o indentación de la primera línea del texto de un elemento*/
+	/*
+		Valores
+			permitidos	Alguno o todos los siguientes valores y en cualquier orden:
+				medida - px, em
+				porcentaje - %
+				inherit - padre
+			Si se utilizan porcentajes, hace referencia a la anchura del elemento en el que se encuentra
+
+		Valor inicial = 0
+	*/
+
+	line-height: 1.7; /*Establece el interlineado o separación del texto*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				normal
+				número - numero decimal
+				medida - px, em
+				porcentaje - %
+				inherit - padre
+			Si se utilizan porcentajes, hace referencia al tamaño de letra del propio elemento
+
+		Valor inicial = normal
+	*/
+
+	word-spacing: 10px; /*Establece la separación entre las palabras del texto*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				normal
+				medida - px, em
+				inherit - padre
+
+		Valor inicial = normal
+	*/
+
+	text-shadow: 3px 2px 5px #1475cb; /* La propiedad text-shadow agrega sombra al texto. */
+	/*
+		offset-x | offset-y | blur-radius | color
+			Ej: text-shadow: 1px 1px 2px black;
+
+		color | offset-x | offset-y | blur-radius
+			Ej: text-shadow: #CCC 1px 0 10px; 
+
+		offset-x | offset-y | color
+			Ej: text-shadow: 5px 5px #558ABB;
+
+		color | offset-x | offset-y
+			Ej: text-shadow: white 2px 5px;
+
+		offset-x | offset-y
+			Se usan los valores predeterminados para color y blur-radius
+			Ej: text-shadow: 5px 10px;
+
+		Podemos usar RGBA para cambiar el color
+			R = Red
+			G = Green
+			B = Blue
+			A = Opacity
+
+			rgba(0.0.0.0.5)
+			rgba(255,0,0,0.3)
+			rgba(0,255,0,0.3)
+			rgba(0,0,255,0.3)
+
+	*/
+}
+
+h3 {
+	font-family: "Ubuntu";
+
+	font-weight: bold; /*Establece el grosor de cada letra*/
+	/*
+		Valores permitidos
+			Uno y sólo uno de los siguientes valores:
+				normal | bold | bolder | lighter 
+				100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+				inherit
+
+		Valor inicial = normal
+	*/
+
+	text-decoration: none; /*Establece la decoración que se añade al texto de un elemento*/
+	/*
+		Valores permitidos.	La explicación de los valores permitidos para esta propiedad es compleja debido a su gran flexibilidad. Existen tres opciones diferentes para establecer el valor o valores de esta propiedad:
+			- El valor none
+			- Uno o más de los siguientes valores y en cualquier orden:
+				underline | overline | line-through | blink
+			- El valor inherit
+
+		Valor inicial = none
+	*/
+
+	text-transform: uppercase; /*Transforma el texto de un elemento para mostrarlo en mayúsculas, minúsculas o una mezcla de ambas*/
+	/*
+		Valores permitidos
+			Uno y sólo uno de los siguientes valores:
+				capitalize - muestra la primera letra de cada palabra en mayúscula y el resto de letras en minúsculas.
+				uppercase - muestra todo el texto del elemento con letras mayúsculas.
+				lowercase - muestra todo el texto del elemento con letras minúsculas.
+				none - muestra el texto tal y como está escrito, respetando todas las mayúsculas y minúsculas.
+				inherit - heredan su valor "de padres a hijos".
+
+		Valor inicial = none
+	*/
+
+	letter-spacing: 4px; /*Establece la separación entre las letras del texto*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				normal
+				medida
+				inherit
+
+		Valor inicial = normal
+	*/
+}

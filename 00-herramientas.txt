@@ -1,0 +1,24 @@
+Navegadores
+01 - https://www.google.com/intl/es/chrome/
+02 - https://www.mozilla.org/es-ES/
+03 - https://www.microsoft.com/es-es/edge
+
+Editores de codigo
+01 - https://www.sublimetext.com/
+	01 - https://packagecontrol.io/packages/Emmet
+02 - https://code.visualstudio.com/
+
+Fuentes
+01 - https://www.w3schools.com/tags/
+02 - https://developers.google.com/style/headings
+03 - https://caniuse.com/
+04 - https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+05 - https://www.favicon-generator.org/
+06 - https://unsplash.com/photos/wX2L8L-fGeA
+07 - https://tinypng.com/
+08 - https://mycolor.space
+09 - https://www.toptal.com/designers/subtlepatterns/
+10 - https://fonts.google.com
+
+Lectura
+01 - https://cybmeta.com/em-y-rem

@@ -1,0 +1,46 @@
+/* "*" es un selector universal */
+* {
+    color: tomato;
+}
+
+/* Selectores de etiqueta */
+h1, h2, h3 {
+    color: darkcyan;
+}
+
+h4 {
+    color: goldenrod;
+}
+
+/* Selector decendente */
+div p {
+    font-size: xx-large;
+}
+
+div article p {
+    font-size: xxx-large;
+}
+
+div p a {
+    color: lightseagreen;
+}
+
+/* Selector de clases */
+.big {
+    font-size: xxx-large;
+}
+
+.black {
+    color: black;
+}
+
+/* Selector de identificador (id) */
+#blue {
+    color: cornflowerblue;
+}
+
+/* Combinacion de selectores */
+section .container p .firstSpan {
+    font-size: small;
+    color: goldenrod;
+}

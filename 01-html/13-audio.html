@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Audio</title>
+	</head>
+	<body>
+		<!--
+			Formatos admitidos:
+				MP3		audio/mpeg
+				OGG		audio/ogg
+				WAV		audio/wav
+		-->
+
+		<audio src="recursos/audio.mp3" controls autoplay loop>
+			Tu navegador no soporta el <code>audio</code>
+		</audio>
+
+		<br><br>
+
+		<audio controls>
+			<source src="recursos/audio.mp3" type="audio/mpeg">
+			<source src="recursos/audio.ogg" type="audio/ogg">
+			<source src="recursos/audio.wav" type="audio/wav">
+		</audio>
+
+	</body>
+</html>
