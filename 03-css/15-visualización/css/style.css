@@ -22,14 +22,14 @@ a {
     padding: 20px;
 }
 
- .box {
-     color: white;
-     background-color: #4fb560;
-     margin: 20px 0;
-     width: 200px;
-     height: 300px;
-     overflow: auto;  /*Controla el comportamiento de los contenidos que no caben en su contenedor*/
-     /*
+.box {
+    color: white;
+    background-color: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 300px;
+    overflow: auto;  /*Controla el comportamiento de los contenidos que no caben en su contenedor*/
+    /*
         Valores permitidos
             Uno y sólo uno de los siguientes valores:
                 visible
@@ -44,37 +44,37 @@ a {
             overflow-x - Para el contenido que no cabe en el eje de las X
             overflow-y - Para el contenido que no cabe en el eje de las Y
     */
- }
+}
 
- .container_01 {
-     width: 600px;
-     background-color: tomato;
-     margin: 20px 0;
-     overflow: hidden;
- }
+.container_01 {
+    width: 600px;
+    background-color: tomato;
+    margin: 20px 0;
+    overflow: hidden;
+}
 
  .left {
-     float: left;
- }
+    float: left;
+}
 
- .right {
-     float: right;
- }
+.right {
+    float: right;
+}
 
- .container_02 .box {
-     width: 150px;
-     height: 150px;
-     position: relative;
- }
+.container_02 .box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
 
- .tomato {
-     background-color: tomato;
-     z-index: 2;
- }
+.tomato {
+    background-color: tomato;
+    z-index: 2;
+}
 
- .info {
-     background-color: rebeccapurple;
-     left: 56px;
-     bottom: 80px;
-     z-index: 10;
- }
+.info {
+    background-color: rebeccapurple;
+    left: 56px;
+    bottom: 80px;
+    z-index: 10;
+}
