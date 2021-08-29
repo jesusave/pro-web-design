@@ -1,0 +1,50 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*
+    Graficos:
+    list-style: none | disc | circle | square
+*/
+.list-01 {
+    list-style: none;
+    padding: 0;
+}
+
+.list-02 {
+    list-style-image: url('../img/check.png');
+}
+
+/*
+    Numericos:
+    list-style: decimal | decimal-leading-zeo | lower-roman | upper-roman | lower-latin | upper-latin
+*/
+
+.list-03 {
+    list-style: upper-roman;
+}
+
+
+
+.list-04 {
+    background-color: burlywood;
+    color: white;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.list-04 li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.list-04 li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.list-04 li a:hover {
+    background-color: tomato;
+}
