@@ -1,0 +1,42 @@
+/*
+    Para los pseudo elementos se usa doble ::
+*/
+p::first-letter {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p::first-line {
+    background-color: thistle;
+    line-height: 40px;
+}
+
+*::selection {
+    background-color: orange;
+    color: black;
+}
+
+.box {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}
+
+.box::before {
+    content: 'Contenido de caja';
+    text-align: center;
+    display: block;
+    background-color: palegoldenrod;
+    position: relative;
+    left: 100px;
+}
+
+.box::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: black;
+    position: relative;
+    left: 300px;
+}
