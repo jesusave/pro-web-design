@@ -1,0 +1,53 @@
+div {
+    background-color: thistle;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+}
+
+/*
+    dotted - Define un borde punteado
+    dashed - Define un borde discontinuo
+    solid - Define un borde sólido
+    double - Define un doble borde
+    groove - Define un borde acanalado en 3D. El efecto depende del valor del color del borde
+    ridge - Define un borde estriado en 3D. El efecto depende del valor del color del borde
+    inset - Define un borde de inserción 3D. El efecto depende del valor del color del borde
+    outset - Define un borde de salida en 3D. El efecto depende del valor del color del borde
+    none - No define ninguna borde
+    hidden - Define un borde oculto
+*/
+
+.box-1 {
+    border: 7px solid black;
+    border-radius: 10px;
+}
+
+.box-2 {
+    border: 7px dotted black;
+    border-radius: 0px 10px 20px 30px;
+}
+
+.box-3 {
+    border: 7px dashed black;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.box-4 {
+    border: 7px double black;
+    border-radius: 100%;
+}
+
+.box-5 {
+    border-top: 7px dotted black;
+    border-left: 7px dashed black;
+    border-right: 7px solid black;
+    border-bottom: 7px double black;
+    border-radius: 4px;
+}
+
+.box-6 {
+    border-left: ridge 7px black;
+    border-radius: 4px;
+}
