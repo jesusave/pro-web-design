@@ -1,0 +1,53 @@
+/* 
+Velocidad de Curva
+	ease - inicio lento, despues rapido y termina lento
+	linear - misma velocida de inicio a fin
+	ease-in - inicio lento
+	ease-out - final lento
+	ease-in-out - inicio lento y final lento
+*/
+
+.box {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*transition: background-color 3s ease, border-radius 3s ease;*/
+    transition: all 1s ease;
+    transition-delay: 0.4s;
+}
+
+.box:hover {
+    background-color: red;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+
+.heart {
+    height: 70px;
+    width: 110px;
+    background-color: red;
+    position: absolute;
+    margin: 92px 216px;
+    transform: rotate(45deg);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    transition: all 1s ease;
+}
+
+.heart::before {
+    content: " ";
+    height: 70px;
+    width: 110px;
+    background-color: red;
+    position: absolute;
+    margin: -20px 20px;
+    transform: rotate(-90deg);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.heart:hover {
+    transform: scale(2, 2);
+}
