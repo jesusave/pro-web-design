@@ -1,0 +1,18 @@
+/*
+    Cosas que podemos hacer con transform:
+        - Trasladar elementos * Ej: translate(200px, 50px)
+        - Escalar elementos
+        - Rotar elementos
+        - Sesgar elementos
+*/
+
+.box {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    /*transform: translate(200px, 50px);*/
+    /*transform: rotate(1.5, 1.5);*/
+    /*transform: rotate(130deg);*/
+    /*transform: skew(20deg, 0deg);*/
+    transform: translate(200px, 200px) scale(1.5, 1.5) rotate(40deg)  skew(30deg);
+}
