@@ -1,0 +1,38 @@
+@keyframes colors {
+    /*from {background-color: hotpink;}
+    to {background-color: tomato;}*/
+    0% {background-color: hotpink;}
+    25% {background-color: #FFEDDA;}
+    50% {background-color: #FFB830;}
+    75% {background-color: tomato;}
+    100% {background-color: hotpink;}
+}
+
+@keyframes box {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(100px);}
+    50% {transform: translateY(200px);}
+    75% {transform: translateY(300px);}
+    100% {transform: translateY(400px);}
+}
+
+body {
+    background-color: hotpink;
+    width: 200px;
+    height: 200px;
+    animation-name: colors;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    right: 500px;
+    border-radius: 50%;
+    background-color: teal;
+    /*animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
+    animation: box 10s infinite;
+}
