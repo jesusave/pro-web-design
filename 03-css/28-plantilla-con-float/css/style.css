@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Agregamos la propiedad de box-sizing: box-sizing; para calcular el espacio restando el padding al contenido*/
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 1000px; /*Establece la anchura de algunos o todos los bordes de los elementos*/
+    background-color: #ccc;
+    margin: 20px auto; /*La propiedad margin establece el margen para los cuatro lados*/
+}
+
+header {
+    background-color: #30323d;
+    color: #fff;
+    padding: 20px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    width: 70%; /*700px + 20px izquierda + 20px derecha = 740px; podemos cambiar pixeles por porcentajes*/
+    float: left; /*Posiciona los elementos de forma flotante*/
+    /*
+        La propiedad float posiciona una caja moviéndola todo lo posible a la izquierda o derecha de su posición original. Los tres valores de esta propiedad se interpretan de la siguiente manera:
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                left, la caja se desplaza todo lo posible a la izquierda de la posición en la que se encontraba.
+                right, la caja se desplaza todo lo posible a la derecha de la posición en la que se encontraba.
+                none, la caja no se desplaza respecto de su posición original.
+                inherit
+    */
+}
+
+aside {
+    background-color: #e8c547;
+    color: #fff;
+    padding: 20px;
+    width: 30%; /*300px + 20px izquierda + 20px derecha = 340px; podemos cambiar pixeles por porcentajes*/
+    float: left; /*Posiciona los elementos de forma flotante*/
+    /*
+        La propiedad float posiciona una caja moviéndola todo lo posible a la izquierda o derecha de su posición original. Los tres valores de esta propiedad se interpretan de la siguiente manera:
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                left, la caja se desplaza todo lo posible a la izquierda de la posición en la que se encontraba.
+                right, la caja se desplaza todo lo posible a la derecha de la posición en la que se encontraba.
+                none, la caja no se desplaza respecto de su posición original.
+                inherit
+    */
+}
+
+footer {
+    clear: both; /*Controla el comportamiento de los elementos adyacentes a elementos posicionados de forma flotante*/
+    /*
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                none, es el valor por defecto que se aplica a todos los elementos y no tiene efecto sobre la posición de la caja.
+                left, hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la izquierda.
+                right, hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la derecha.
+                both, hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la izquierda o a la derecha.
+                inherit
+        
+    */
+    background-color: #4d5061;
+    padding: 20px;
+    color: #fff;
+}
