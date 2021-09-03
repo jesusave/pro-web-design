@@ -16,7 +16,7 @@ body {
     max-width: 1000px; /*Cambiamos a un ancho maximo para mantener un limmite en las dimenciones de nuestro sitio*/
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 4px 4px;
+    border-radius: 4px;
 }
 
 /*Trabajando con la navegaciòn*/

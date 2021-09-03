@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 80%;
+	max-width: 700px;
+	background-color: black;
+	
+	display: flex;
+	flex-direction: row; /*flex-direction: row viene por defecto*/
+	flex-wrap: wrap; /*Sirve para respetar el tamaño de cada elemento hijo*/
+	
+	/*flex-flow: row wrap;*/ 
+		/*Es una forma simplificada de flex-direction y flex-wrap*/
+	
+	justify-content: space-between; /*Por defecto biene flex-start*/
+	
+	height: 500px;
+
+	/*align-items: baseline; */
+	/*
+		stretch le tenemos que quitar el alto (height) para que ocupe todo el alto
+		baseline sirve para alinear el contenido con el resto
+	*/
+
+	align-content: center;
+}
+
+.box {
+	width: 100px; /*Podemos cambiar de 100 a 150*/
+	height: 100px;
+	background-color: tomato;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 40px;
+	color: white;
+	/* order: 1;  */
+		/*Esta caja tiene un orden de uno, es decir que se posicionarà primero*/
+	flex: 1 1 auto; /*proporcion de 1 para crecer, 1 para hacerse mas pequeño y un tamaño automatico*/ 
+}
+
+.dos {
+	flex-shrink: 1; /*flex-shrink impide que un elemento pueda cambiar de tamaño*/
+	/* width: 200px; */
+	flex-grow: 1; /*Crece el doble de pixeles que flex-grow: 1;*/
+	flex-basis: auto;
+}
+
+.tres {
+	align-self: center;
+	height: auto;
+}
+
+/* 
+.uno {
+	order: 3;
+} 
+*/
+
+/*Esta caja tiene un orden de dos, es decir que se posicionarà despues de la caja uno*/
+/*
+.dos {
+	order: 2;
+}
+*/

@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-image: linear-gradient(rgba(25, 209, 231, 0.2), rgba(239, 183, 62, 0.9)), url('../img/fondo_02.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contenedor {
+	margin: auto; /*Agregamos margin auto para centrar nuestro contenido*/
+	/* margin: 20px; */
+	width: 90%;
+	max-width: 1000px;
+
+	/*Agregamos flex para que todo nuestro contenido se acomode*/
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header {
+	width: 100%;
+	padding: 50px 0;
+
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+
+header .menu a {
+	color: #fff;
+	text-decoration: none;
+	margin-right:40px;
+	font-size: 18px;
+}
+
+header .menu a:hover {text-decoration: underline;}
+
+.main {
+	background: #fff;
+	padding: 20px;
+	width: 70%;
+}
+
+.main article .thumb {
+	margin-bottom: 20px;
+}
+
+.main article .thumb img {
+	vertical-align: top;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.main article h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 32px;
+}
+
+.main article p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+aside {
+	width: 30%;
+	background: #efb73e;
+
+	padding: 20px; /*Agregamos un padding*/
+
+	/* Agregamos flex para que todo nuestro contenido se acomode */
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+aside .ad {
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+	/*margin: 20px 0;*/ /*Quitamos en margin-button*/
+	background: #aea79f;
+	border-radius: 4px;
+}
+
+/*Footer de nuestro sitio*/
+footer {
+	margin-top: 20px;
+	background: rgba(174, 167, 159, .8);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: #fff;
+
+	/* Agregamos flex para que todo nuestro contenido se acomode */
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+}
+
+footer .redes-sociales a {
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+
+/*Responsive web design*/
+
+/*Cuando estemos en una pantalla y el ancho sea menor a los 800px para abajo me ejecute los siguientes estilos*/
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+/*Cuando estemos en una pantalla y el ancho sea menor a los 600px para abajo me ejecute los siguientes estilos*/
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction:column;
+		padding-bottom: 20px; 
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	header .menu a {
+		margin:0 20px; 
+	}
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+	
+	footer .autor {
+		order:2;
+	}
+}
+
+/*Cuando estemos en una pantalla y el ancho sea menor a los 400px para abajo me ejecute los siguientes estilos*/
+@media screen and (max-width: 400px) {
+	aside {
+		display: none;
+	}
+}
